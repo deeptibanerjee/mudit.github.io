@@ -1,17 +1,10 @@
+/* CSS OF THE BODY AND HTML */
 body,
 html {
   margin: 0%;
   scroll-behavior: smooth;
 }
-/* CSS of the media query */
-@media only screen and (max-width:750px){
-  .flex-container{
-    flex-direction: column;
-    justify-content: center;
 
-  }
-  
-}
 /* CSS OF THE HEADER  */
 .header {
   font-size: 20px;
@@ -25,11 +18,11 @@ html {
   z-index: 1;
 
 }
-
+/* CSS OF THE HEADER */
 .header {
   overflow: initial;
   padding: -47px 10px;
-  background-color: rgba(6, 1, 31, 0.589);
+  background-color: rgba(6, 1, 31, 0.98);
 
 }
 
@@ -107,7 +100,7 @@ html {
 }
 
 /* CSS of the Submit button */
-#submit {
+.submit {
   margin-bottom: 12px;
   width: 30%;
   background-color: #ffca13;
@@ -129,10 +122,6 @@ html {
   background-color: rgb(239, 151, 44);
   transition: 1ms;
 }
-
-
-
-
 
 /* CSS of the Footer bar */
 .Links {
@@ -197,4 +186,34 @@ html {
 .Links section:hover {
   background: #ddd;
   color: rgb(209, 209, 209);
+}
+
+/* CSS of the media query */
+@media only screen and (max-width:750px){
+  .flex-container{
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  #about{
+    padding: 0px 70px;
+  }
+  .submit{
+    margin-left: 215px;
+    padding-left: 60px;
+  }
+  #know-more{
+    padding-left: 231px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-left:200px;
+    }
+    #mudit-with-guitar {
+        
+        padding-left: 133px;
+      }
+  
 }

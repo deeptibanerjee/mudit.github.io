@@ -3,44 +3,7 @@ body, html {
   scroll-behavior: smooth;
 }
 
-@media only screen and (max-width:750px){
-  .flex-container{
-    flex-direction: column;
-    justify-content: center;
-  }
-  .video-track-flex{
-    flex-direction: column;
-    justify-content: center;
-  }
-  #videos{
-    justify-content: center;
-  }
-  #bottom-segment-para{
-    flex-direction: column;
-    justify-content: center;
-  }
-  #new-album{
-    flex-direction: column;
-    justify-content: center;
-  }
-  #new-launch{
-    flex-direction: column;
-    justify-content: center;
-  }
-  .new-track{
-    flex-direction: column;
-    justify-content: center;
-  }
-  .play{
-    flex-direction: column;
-    justify-content: center;
-  }
-  #sound-tracks{
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-}
+
 /* CSS OF THE FIRST SECTION */
 .hero-image {
   background-image: url('../images/index/coverpic.jpg');
@@ -62,16 +25,11 @@ body, html {
   top: 0;
   width: 100%;
   z-index: 1;
- 
-}
-
-/* CSS OF THE HEADER SECTION */
-.header {
   overflow: initial;
   padding: -47px 10px;
-  background-color: rgba(6, 1, 31, 0.589);
-
+  background-color: rgba(6, 1, 31, 0.98); 
 }
+
 /* CSS OF THE HEADER LINK  */
 .header a {
   
@@ -82,7 +40,7 @@ body, html {
   padding-top: 41px;
   text-decoration: none;
   font-size: 18px; 
- border-radius: 4px;
+  border-radius: 4px;
   margin-right: 10px;
 }
 
@@ -100,15 +58,13 @@ body, html {
   width: 142px;
   height: 107px;
 }
-
+/* CSS OF THE NEW LAUNCH ID  */
 #new-launch{
-  width: 50%;
-  padding: 50px;
+  padding: 50px 95px;
 }
 
 /* CSS OF THE BOTTOM IMAGE BACKGROUND  */
 .bottom-image {
-  display: flex;
   background-image:url('../images/index/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -116,14 +72,19 @@ body, html {
   position: relative;
   height: fit-content;
 }
+/* CSS OF THE FLEX CONTAINER CLASS  */
+.flex-container{
+  display: flex;
+}
 
 /* CSS OF THE MIDDLE SECTION PARAGRAPH */
 #bottom-segment-para{
   font-family:"Comfortaa";
   color: #ddd;
   line-height: 25px;
-  padding: 20px;
-  display: flex;
+  padding: 0px 150px 50px;
+  margin: 0px;
+  text-align: justify;
 }
 /* CSS OF THE UPPER RIGHT TEXT  */
 .a-music-that{
@@ -134,9 +95,10 @@ body, html {
   font-size: 40px;
   display: flex;
   justify-content: right;
-  padding-right: 115px;
+  padding-right: 220px;
   padding-top: 276px;
 }
+/* CSS OF THE TEXT "BLOW"  */
 #blow{
   margin:0%;
   font-family: "Comfortaa";
@@ -145,10 +107,10 @@ body, html {
   font-size: 60px;
   display: flex;
   justify-content: right;
-  padding-right: 309px;
+  padding-right: 253px;
   padding-top: 17px;
 }
-
+/* CSS OF THE TEXT "YOUR MIND"  */
 #your-mind{
   margin:0%;
   font-family: "Comfortaa";
@@ -157,9 +119,10 @@ body, html {
   font-size: 40px;
   display: flex;
   justify-content: right;
-  padding-right: 165px;
+  padding-right: 188px;
   padding-top: 16px;
 }
+/* CSS OF THE ID NEW ALBUM  */
 #new-album{
   padding-left: 20px;
 }
@@ -169,20 +132,19 @@ body, html {
   font-family:"Comfortaa";
   color: #ddd;
   line-height: 25px;
- text-align: center;
+ text-align: left;
 }
-.play{
-  width: 50%;
-justify-content: left;
-  display: flex;
-  padding-top: 91px;
-}
+/* CSS OF THE SOUND TRACK  */
 #sound-tracks{
-  padding-top: 10px;
+  padding-top: 79px;
 }
-
+/* CSS OF THE BLACK-BOX IN THIRD SECTION  */
 .black-box{
   background:black;
+}
+/* CSS OF THE ALBUM-COVER IN SECOND SECTION  */
+#album-cover{
+  width:578px
 }
 
 /* CSS OF THE  VIDEO TRACKS LIST  */
@@ -196,15 +158,17 @@ justify-content: left;
   font-size: 36px; 
   padding-left: 80px;
 }
+
+
 /* CSS OF THE  FLEX BOX OF VIDEO TRACKS LIST  */
 .video-track-flex{
   display:flex;
- padding-top: 20px;
- font-family:"Comfortaa";
- color: rgb(255, 255, 255);
-justify-content: space-evenly;
-
-
+  flex-direction: row;
+  padding-top: 20px;
+  font-family:"Comfortaa";
+  color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  padding-bottom:30px;
 }
 
 /* CSS of the input text in the contact form */
@@ -217,29 +181,22 @@ justify-content: space-evenly;
   box-sizing: border-box;
 }
 
-.video-track{
-  text-align: center;
-}
-
+/* CSS OF THE CLASS BOTTOM-FLEX  */
 .bottom-flex{
   display:flex;
+  flex-direction: column;
 justify-content: space-evenly;
-}
-/* CSS OF THE CONTACT FORM  */
-#contact-form{
-  margin: 20px;
-  font-family:"Comfortaa";
-  color: rgb(25 25 25);
-  padding-top: 30px;
-  width: 40%;
+padding: 51px;
+
 }
 
-/* CSS OF THE   */
+
+/* CSS OF THE TEXT" TOUR-DATES"  */
 #mail-me{
-  padding-top: 150px;
+  text-align: center;
 
 }
-
+/* CSS OF THE CLASS YELLOW-LABEL */
 .yellow-label{
   margin:0%;
   font-family: "Comfortaa";
@@ -248,35 +205,65 @@ justify-content: space-evenly;
   font-size: 36px; 
 }
 
-#message{
-  font-family:"Comfortaa";
-  width: 50%;
-  float: right;
+/* CSS OF THE TABLE USED IN FOURTH SECTION */
+#table{
+ font-family:"Comfortaa";
+ color: rgb(25 25 25);
+justify-content: space-between;
+text-align: center;
+border-spacing: 27px;
+}
+/* CSS OF THE TABLE HEAD */
+.table-head{
+  margin:0%;
+  font-family: "Comfortaa";
   color: rgb(255, 255, 255);
-  margin-top: -91px;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 100px;
+  font-weight: bold;
+  font-size: 16px; 
+  background-color:#ffca13;
+  margin-top: 10px;
+}
+/* CSS OF THE DATE IN TABLE */
+.date{
+  margin:0%;
+  font-family: "Comfortaa";
+  color:#ffca13;
+  font-weight: bold;
+  font-size: 26px; 
+  text-align: center;
+}
+/* CSS OF THE DATE IN TABLE */
+.date > span {
+  font-size: 36px;
+}
+/* CSS OF THE ROW IN TABLE */
+.table-row{
+  height: 47px;
 }
 
 /* CSS of the Submit button */
-#submit{
-  margin-bottom: 12px;
-  background-color: #ffca13;
+.submit {
+  margin: auto;
+  margin-top: 20px;
+  width: 30%;
+  background-color: #1c0248;
   color: rgb(255, 255, 255);
-  padding: 10px 6px;
+  padding: 8px 116px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'Righteous', cursive;
-  width: 90%;
+  font-family: "Comfortaa";
+  
 }
-/* CSS of the Submit button hover effect */
-#submit:hover{
-  background-color: rgb(239, 151, 44);
-  transition: 1ms;
+/* CSS OF THE TEXT "HURRY UP!" */
+#hurry-up{
+  margin:0%;
+  font-family: "Comfortaa";
+  color:#ffca13;
+  font-weight: bold;
+  font-size: 26px; 
+  text-align: center;
 }
-
 /* CSS of the Footer bar */
 .Links {
   overflow: hidden;
@@ -341,6 +328,89 @@ justify-content: space-evenly;
   color: rgb(209, 209, 209);
 }
 
+/* CSS OF THE MEDIA-QUERY */
+@media only screen and (max-width:750px){
+  .flex-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .video-track-flex{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .video-track-flex > div{
+   margin: auto;
+  }
+  #videos{
+   padding: 20px 0px;
+    text-align: center
+  }
+  #bottom-segment-para{
+    flex-direction: column;
+    justify-content: center;
+  }
+  #new-album{
+    flex-direction: column;
+    justify-content: center;
+  }
+  #new-launch{
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+  }
+  .new-track{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .play{
+    flex-direction: column;
+    justify-content: center;
+  }
+  #sound-tracks{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 190px;
+    padding-top: 0px;
+  }
+  #table{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .table-head{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .date{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .date > span {
+    flex-direction: column;
+    justify-content: center;
+   }
+   .bottom-flex{
+    justify-content: center;
+    padding: 20px;
+   }
+   #mail-me{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .video-track{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .submit {
+    padding: 20px 0px;
+  }
+  nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin-left:200px;
+  }
+}
 
 
 

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="CSS/style.css">
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
     <meta name="description" content="Home page of Mudit Sharma's website">
     <meta name="author" content="MUDIT SHARMA">
 </head>
@@ -29,18 +30,18 @@
 
         <article> <!--START FIRST section-->
             <p class="a-music-that">
-                 MUSIC THAT</p>
+                MUSIC TO</p>
             <p id="blow">
                 BLOW</p>
             <p id="your-mind">
                 YOUR MIND</p>
 
-        </article> <!--END FIRST section-->
+        </article> 
 
         <header class="header"> <!--START header section-->
-
+            <img src="images/index/muditsharma-logo.png" alt="The logo of MUDIT SHARMA" class="logo"
+                onclick="window.location='index.html'">
             <nav>
-                <img src="images/index/muditsharma-logo.png" alt="The logo of MUDIT SHARMA" class="logo">
 
                 <a href="contact.html">CONTACT</a>
                 <a href="music.html">MUSIC</a>
@@ -49,34 +50,33 @@
 
             </nav>
         </header> <!--END header section-->
-    </section>
+    </section> <!--END FIRST section-->
 
-    
-    <article class="flex-container bottom-image"> <!--START SECOND section-->
+    <article class="bottom-image">
 
-        <!-- <article class="flex-container"> -->
+        <main class="flex-container"> <!--START SECOND section-->
+
             <section id="new-launch">
                 <p class="yellow-label" id="new-album">
                     New Album Release </p>
 
-                <p id="bottom-segment-para"> A new music combination of captivating melodies, meaningful lyrics, and
-                    skillful
-                    instrumentation
-                    can create a sense of introspection and reflection, transporting listeners on a transformative
-                    journey of the mind and soul. </p>
+                <img src="images/index/AlbumDesign_DeeptiBanerjee-05.png" alt="This is the new album release cover"
+                    id="album-cover">
 
-            </section>
 
-            <section>
+
+            </section> 
+
+            <section> 
 
                 <div id="sound-tracks">
-                    <p class="new-track"> JOURNEY TO THE JOURNEY WITHIN</p>
+                    <p class="new-track">LYRA</p>
                     <p class="new-track">
                         <audio controls>
                             <source src="audios/Journey to the Journey Within - by Mudit Sharma.mp3">
                         </audio>
                     </p>
-                    <p class="new-track"> LYRA</p>
+                    <p class="new-track"> JOURNEY TO THE JOURNEY WITHIN</p>
                     <p class="new-track">
                         <audio controls>
                             <source src="audios/Moons Delight by Mudit Sharma.mp3">
@@ -89,58 +89,72 @@
                         </audio>
                     </p>
                 </div>
-            </section>
-        <!-- </article> END SECOND section -->
-    </article> <!--END MAIN-->
+            </section> 
 
-    <article class="flex-container black-box"> <!--START THIRD section-->
+        </main> <!--END MAIN-->
+        <p id="bottom-segment-para"> A new music combination of captivating melodies, meaningful lyrics, and
+            skillful
+            instrumentation
+            can create a sense of introspection and reflection, transporting listeners on a transformative
+            journey of the mind and soul. </p>
+    </article> <!--END SECOND section-->
+
+    <article class="black-box"> <!--START THIRD section-->
         <p class="yellow-label" id="videos">
             Featured Videos </p>
 
         <section class="video-track-flex">
+
+
             <div>
-                <p class="video-track"> The umbral Moon</p>
-                <p class="video-track"> <iframe src="videos/Rise Again by Mudit Sharma.mp4" sandbox frameborder="0">
-                    </iframe></p>
+                <p class="video-track"> Rise Again</p>
+                <iframe src="https://www.youtube.com/embed/zGAZAFwG1eY" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
             </div>
 
             <div>
-                <p class="video-track"> Comfort</p>
-                <p class="video-track"> <iframe src="videos/Comfort by Mudit Sharma.mp4" sandbox frameborder="0">
-                    </iframe></p>
-            </div>
-
-            <div>
-                <p class="video-track"> Moon's Delight</p>
-                <p class="video-track"> <iframe src="videos/Moon's Delight by Mudit Sharma.mp4" sandbox frameborder="0">
-                    </iframe></p>
+                <p class="video-track"> Hope for Love</p>
+                <iframe src="https://www.youtube.com/embed/7M4MLfE7fpI" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
 
         </section>
     </article> <!--END THIRD section-->
 
-
-
     <article class="bottom-flex"> <!--START FOURTH section-->
+
         <p class="yellow-label" id="mail-me">
-            Send me <br>a message </p>
-        <form action="mailto:https://mail.google.com/mail/u/0/#inbox" id="contact-form">
-            <label> Name</label><br>
-            <input type="text" class="input-box"> <br><br>
+            Tour-dates </p>
+        <table id="table">
+            <tr class="table-row">
+                <th class="table-head">DATE</th>
+                <th class="table-head">VENUE</th>
+                <th class="table-head">LOCATION </th>
+            </tr>
+            <tr class="table-row">
+                <td class="date"> Apr<br><span>20</span></td><br>
+                <td>Coca-Cola Coliseum</td><br><br>
+                <td>45 Manitoba Dr, Toronto, ON</td><br>
 
-            <label> E-mail ID </label> <br>
-            <input type="text" class="input-box"><br><br>
+            </tr>
+            <tr class="table-row">
+                <td class="date"> Apr<br><span>24</span></td>
+                <td>Massey Hall </td>
+                <td>178 Victoria St, Toronto, ON</td>
 
-            <label> Your Telephone (*Optional) </label><br>
-            <input type="tel" class="input-box"> <br><br>
+            </tr>
+            <tr class="table-row">
+                <td class="date">Jun<br><span>10</span></td>
+                <td>Budweiser Stage</td>
+                <td>909 Lake Shore Blvd W, Toronto, ON </td>
 
-            <label> Send me a message </label><br>
-            <textarea type="message" class="input-box">
-
-                    </textarea><br><br>
-            <input type="submit" value="Submit" id="submit">
-
-        </form> <!--This is the END of the Contact form-->
+            </tr>
+        </table>
+        <p id="hurry-up">Hurry up!</p>
+        <button onclick="window.location='contact.html';" class="submit"> Book your seat</button>
     </article> <!--END FOURTH section-->
 
 

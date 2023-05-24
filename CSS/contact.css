@@ -1,14 +1,11 @@
+/* CSS OF THE BODY AND HTML */
 body,
 html {
   margin: 0%;
   scroll-behavior: smooth;
 }
 
-@media only screen and (max-width:750px){
-  .flex-container{
-    flex-direction: column;
-  }
-}
+
 
 /* CSS OF THE HEADER  */
 .header {
@@ -24,11 +21,11 @@ html {
 
 }
 
-
+/* CSS OF THE HEADER */
 .header {
   overflow: initial;
   padding: -47px 10px;
-  background-color: rgba(6, 1, 31, 0.589);
+  background-color: rgba(6, 1, 31, 0.98);
 
 }
 
@@ -45,7 +42,6 @@ html {
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 30px;
-  padding-top: 41px;
   text-decoration: none;
   font-size: 18px;
   border-radius: 4px;
@@ -111,7 +107,7 @@ html {
 /* CSS of the "contact me" text */
 #contactme {
   font-family: "Comfortaa";
-  color: rgb(239, 151, 44);
+  color: #ffca13;
   font-size: 30px;
 }
 
@@ -208,4 +204,17 @@ html {
 .Links section:hover {
   background: #ddd;
   color: rgb(209, 209, 209);
+}
+
+/* CSS OF THE MEDIA-QUERY */
+@media only screen and (max-width:750px){
+  .flex-container{
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-left:200px;
+    }
 }
